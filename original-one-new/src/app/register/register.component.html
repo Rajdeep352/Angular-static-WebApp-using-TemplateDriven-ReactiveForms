@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cerulean/bootstrap.min.css" integrity="sha384-3fdgwJw17Bi87e1QQ4fsLn4rUFqWw//KU0g8TvV6quvahISRewev6/EocKNuJmEw" crossorigin="anonymous">
+<br/>
+<div class="container">
+    <div class="row">
+        <div class="form-bg">
+            <form #studentForm="ngForm" (ngSubmit)="RegisterStudent(studentForm)">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Student Registration</h3>
+                    </div>
+                  <div class="panel-body">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input id="firstName" type="text" class="form-control"  name="firstName" ngModel>
+                        </div>
+                       
+
+                        
+                        
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input id="lastName" type="text" class="form-control" name="lastName" ngModel>
+                                  </div>
+          
+                                  <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="text" class="form-control" name="email" ngModel>
+                                  </div>
+                                  <div class="form-group">
+                                    <label>Gender</label>
+                                    <div class="form-control">
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender" value="male" checked ngModel> Male
+                                        </label>
+        
+                                        <label class="radio-inline">
+                                        <input type="radio" name="gender" value="female" ngModel> Female
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="branch">Branch</label>
+                                    <select id="branch" name="branch" ngModel class="form-control">
+                                        <option value="1" selected>CSE</option>
+                                        <option value="2">EEE</option>
+                                        <option value="3">ECE</option>
+                                        <option value="4">Mech</option>
+                                        <option value="5">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-control">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" name="isAccept" ngModel>Accept Terms & Conditions
+                                        </label>
+                            <div class="panel-footer">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                       
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+                          

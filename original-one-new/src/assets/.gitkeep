@@ -1,0 +1,3 @@
+img = this.imageSource
+<img class="images" src={{img}}/> or
+<img class="images" [src]="img"/>
